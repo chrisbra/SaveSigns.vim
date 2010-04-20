@@ -2,7 +2,7 @@
 " -------------------------------------------------------------
 " Last Change: 2010, Feb 25
 " Maintainer:  Christian Brabandt <cb@256bit.org>
-" Version:     0.2
+" Version:     0.3
 " Copyright:   (c) 2009 by Christian Brabandt
 "              The VIM LICENSE applies to histwin.vim 
 "              (see |copyright|) except use "savesigns.vim" 

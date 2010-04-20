@@ -1,7 +1,7 @@
 *savesigns.txt*  Plugin to save Signs
 
 Author:  Christian Brabandt <cb@256bit.org>
-Version: 0.2  Feb 25, 2010
+Version: 0.3  Feb 25, 2010
 							    *savesigns-copyright*
 Copyright: (c) 2009, 2010 by Christian Brabandt 
 	The VIM LICENSE applies to savesigns.vim, savesignsPlugin.vim
@@ -60,6 +60,7 @@ be lost.
 							    *savesigns-history*
 3. savesigns History
 
+0.3     - Enabled GLVS (see :h GLVS)
 0.2     - Uploaded to http://www.vim.org/
         - Created autoload script
         - Created documentation

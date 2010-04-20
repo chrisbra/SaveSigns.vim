@@ -2,8 +2,8 @@
 UseVimball
 finish
 doc/savesigns.txt	[[[1
-68
-*savesigns.txt*  Plugin to save Signs                - Vers 0.2  Feb 25, 2010
+69
+*savesigns.txt*  Plugin to save Signs                - Vers 0.3  Feb 25, 2010
 
 Author:  Christian Brabandt <cb@256bit.org>
 							    *savesigns-copyright*
@@ -64,6 +64,7 @@ be lost.
 							    *savesigns-history*
 3. savesigns History
 
+0.3     - Enabled GLVS (see :h GLVS)
 0.2     - Uploaded to http://www.vim.org/
         - Created autoload script
         - Created documentation
@@ -77,7 +78,7 @@ autoload/savesigns.vim	[[[1
 " -------------------------------------------------------------
 " Last Change: 2010, Feb 25
 " Maintainer:  Christian Brabandt <cb@256bit.org>
-" Version:     0.2
+" Version:     0.3
 " Copyright:   (c) 2009 by Christian Brabandt
 "              The VIM LICENSE applies to histwin.vim 
 "              (see |copyright|) except use "savesigns.vim" 
@@ -213,12 +214,12 @@ let &cpo=s:cpo
 unlet s:cpo"}}}
 " vim: ts=4 sts=4 fdm=marker com+=l\:\" spell spelllang=en
 plugin/savesignsPlugin.vim	[[[1
-40
+41
 " savesigns.vim - Vim global plugin for Saving Signs
 " -------------------------------------------------------------
 " Last Change: 2010, Feb 25
 " Maintainer:  Christian Brabandt <cb@256bit.org>
-" Version:     0.2
+" Version:     0.3
 " Copyright:   (c) 2010 by Christian Brabandt
 "              The VIM LICENSE applies to histwin.vim 
 "              (see |copyright|) except use "savesigns.vim" 
@@ -226,7 +227,7 @@ plugin/savesignsPlugin.vim	[[[1
 "              No warranty, express or implied.
 "    *** ***   Use At-Your-Own-Risk!   *** ***
 "
-" GetLatestVimScripts: XXX 1 :AutoInstall: savesigns.vim
+" GetLatestVimScripts: 2992 2 :AutoInstall: savesigns.vim
 " TODO: - write documentation
 
 " Init:"{{{
@@ -234,7 +235,7 @@ if exists("g:loaded_savesigns") || &cp || !has("signs")
   finish
 endif
 
-let g:loaded_savesigns   = 0.2
+let g:loaded_savesigns   = 0.3
 let s:cpo                = &cpo
 set cpo&vim"}}}
 
@@ -251,6 +252,7 @@ let &cpo=s:cpo
 unlet s:cpo"}}}
 
 " ChangeLog:
+" 0.3     - Enable GLVS (see :h GLVS)
 " 0.2	  - Make autoload plugin
 " 0.1     - First working version
 " vim: ts=4 sts=4 fdm=marker com+=l\:\" spell spelllang=en fdm=marker
