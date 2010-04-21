@@ -136,4 +136,4 @@ endfun
 " Restore:"{{{
 let &cpo=s:cpo
 unlet s:cpo"}}}
-" vim: ts=4 sts=4 fdm=marker com+=l\:\" spell spelllang=en
+" vim: ts=4 sts=4 fdm=marker com+=l\:\"
