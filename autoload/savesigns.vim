@@ -100,7 +100,7 @@ fun! <sid>CreateSignFiles(fname, force)
 	else
 	    exe ":sp" filename
 	endif
-	%d
+	%d _
 
 	call append('.', [ '" Source this file, to reload all signs',
 		    \'" Signs that are defined for files which are currently not loaded',
