@@ -14,7 +14,7 @@ dist-clean: clean
 vimball: $(PLUGIN).vba
 
 install:
-	vim -u NONE -N -c':so' -c':q!' ${PLUGIN}.vba
+	vim -N -c':so %' -c':q!' ${PLUGIN}.vba
 
 uninstall:
 	vim -u NONE -N -c':RmVimball ${PLUGIN}.vba'
