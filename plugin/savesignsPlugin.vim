@@ -1,8 +1,9 @@
 " savesigns.vim - Vim global plugin for Saving Signs
 " -------------------------------------------------------------
-" Last Change: 2010, Feb 25
+" Last Change: Sat, 16 Feb 2013 23:09:15 +0100
+
 " Maintainer:  Christian Brabandt <cb@256bit.org>
-" Version:     0.3
+" Version:     0.4
 " Copyright:   (c) 2010 by Christian Brabandt
 "              The VIM LICENSE applies to histwin.vim 
 "              (see |copyright|) except use "savesigns.vim" 
@@ -10,7 +11,7 @@
 "              No warranty, express or implied.
 "    *** ***   Use At-Your-Own-Risk!   *** ***
 "
-" GetLatestVimScripts: 2992 2 :AutoInstall: savesigns.vim
+" GetLatestVimScripts: 2992 3 :AutoInstall: savesigns.vim
 " TODO: - write documentation
 
 " Init:"{{{

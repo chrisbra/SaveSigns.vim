@@ -1,7 +1,7 @@
 *savesigns.txt*  Plugin to save Signs
 
 Author:  Christian Brabandt <cb@256bit.org>
-Version: 0.3  Feb 25, 2010
+Version: 0.4 Sat, 16 Feb 2013 23:09:15 +0100
 							    *savesigns-copyright*
 Copyright: (c) 2009, 2010 by Christian Brabandt 
 	The VIM LICENSE applies to savesigns.vim, savesignsPlugin.vim
@@ -60,6 +60,9 @@ be lost.
 							    *savesigns-history*
 3. savesigns History
 
+0.4	- use the blackhole register for deleting the buffer content
+	- install target did not work
+	- Deleted spell modeline
 0.3     - Enabled GLVS (see :h GLVS)
 0.2     - Uploaded to http://www.vim.org/
         - Created autoload script
