@@ -1,9 +1,10 @@
 " savesigns.vim - Vim global plugin for saving Signs
 " -------------------------------------------------------------
-" Last Change: Sat, 16 Feb 2013 23:09:15 +0100
+" Last Change: Mon, 19 Aug 2013 22:00:35 +0200
+
 
 " Maintainer:  Christian Brabandt <cb@256bit.org>
-" Version:     0.4
+" Version:     0.5
 " Copyright:   (c) 2009 by Christian Brabandt
 "              The VIM LICENSE applies to histwin.vim 
 "              (see |copyright|) except use "savesigns.vim" 
@@ -96,7 +97,7 @@ fun! <sid>CreateSignFiles(fname, force)
 	    let filename=tempname()
 	endif
 
-	if bufloaded(filename)
+	if bufloaded(filename) && bufwinnr(filename) > 0
 	    exe bufwinnr(filename) . "wincmd w"
 	else
 	    exe ":sp" filename
