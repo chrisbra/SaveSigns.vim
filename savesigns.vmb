@@ -2,13 +2,14 @@
 UseVimball
 finish
 plugin/savesignsPlugin.vim	[[[1
-42
+43
 " savesigns.vim - Vim global plugin for Saving Signs
 " -------------------------------------------------------------
-" Last Change: Tue, 20 Apr 2010 23:24:17 +0200
+" Last Change: Mon, 19 Aug 2013 22:00:35 +0200
+
 
 " Maintainer:  Christian Brabandt <cb@256bit.org>
-" Version:     0.4
+" Version:     0.5
 " Copyright:   (c) 2010 by Christian Brabandt
 "              The VIM LICENSE applies to histwin.vim 
 "              (see |copyright|) except use "savesigns.vim" 
@@ -16,7 +17,7 @@ plugin/savesignsPlugin.vim	[[[1
 "              No warranty, express or implied.
 "    *** ***   Use At-Your-Own-Risk!   *** ***
 "
-" GetLatestVimScripts: 2992 3 :AutoInstall: savesigns.vim
+" GetLatestVimScripts: 2992 4 :AutoInstall: savesigns.vim
 " TODO: - write documentation
 
 " Init:"{{{
@@ -46,13 +47,14 @@ unlet s:cpo"}}}
 " 0.1     - First working version
 " vim: ts=4 sts=4 fdm=marker com+=l\:\" spell spelllang=en fdm=marker
 autoload/savesigns.vim	[[[1
-140
+141
 " savesigns.vim - Vim global plugin for saving Signs
 " -------------------------------------------------------------
-" Last Change: Tue, 20 Apr 2010 23:24:17 +0200
+" Last Change: Mon, 19 Aug 2013 22:00:35 +0200
+
 
 " Maintainer:  Christian Brabandt <cb@256bit.org>
-" Version:     0.4
+" Version:     0.5
 " Copyright:   (c) 2009 by Christian Brabandt
 "              The VIM LICENSE applies to histwin.vim 
 "              (see |copyright|) except use "savesigns.vim" 
@@ -150,7 +152,7 @@ fun! <sid>CreateSignFiles(fname, force)
 	else
 	    exe ":sp" filename
 	endif
-	%d
+	%d _
 
 	call append('.', [ '" Source this file, to reload all signs',
 		    \'" Signs that are defined for files which are currently not loaded',
@@ -186,13 +188,13 @@ endfun
 " Restore:"{{{
 let &cpo=s:cpo
 unlet s:cpo"}}}
-" vim: ts=4 sts=4 fdm=marker com+=l\:\" spell spelllang=en
+" vim: ts=4 sts=4 fdm=marker com+=l\:\"
 doc/savesigns.txt	[[[1
-70
+73
 *savesigns.txt*  Plugin to save Signs
 
 Author:  Christian Brabandt <cb@256bit.org>
-Version: 0.4 Tue, 20 Apr 2010 23:24:17 +0200
+Version: 0.5 Mon, 19 Aug 2013 22:00:35 +0200
 							    *savesigns-copyright*
 Copyright: (c) 2009, 2010 by Christian Brabandt 
 	The VIM LICENSE applies to savesigns.vim, savesignsPlugin.vim
@@ -251,6 +253,9 @@ be lost.
 							    *savesigns-history*
 3. savesigns History
 
+0.4	- use the blackhole register for deleting the buffer content
+	- install target did not work
+	- Deleted spell modeline
 0.3     - Enabled GLVS (see :h GLVS)
 0.2     - Uploaded to http://www.vim.org/
         - Created autoload script
